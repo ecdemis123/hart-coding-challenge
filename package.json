@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/ecdemis123/hart-coding-challenge#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14",
+    "node-foursquare": "^0.3.0",
+    "node-yelp": "0.0.3"
   }
 }
