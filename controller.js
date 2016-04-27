@@ -23,8 +23,12 @@ const what3WordsConfig = {
 
 module.exports = {
   mergeRestaurants: (req, res) => {
-    
+    yelp.search({term: "restaurant", location: 90210})
+    .then(data => {
+      res.json(data);
+    }
+  )
 
-  }
+}
 
 }
