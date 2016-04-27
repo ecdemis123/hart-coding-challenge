@@ -23,6 +23,7 @@
     "mongoose": "^4.4.14",
     "node-foursquare": "^0.3.0",
     "node-red-node-what3words": "0.0.3",
-    "node-yelp": "0.0.3"
+    "node-yelp": "0.0.3",
+    "yelp": "^1.0.1"
   }
 }

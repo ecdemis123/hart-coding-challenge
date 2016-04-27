@@ -3,13 +3,14 @@ const yelpUtil = require('node-yelp');
 const foursquareUtil = require('node-foursquare');
 const what3WordsUtil = require('geo.what3words');
 const config = require('./config.js');
+var Yelp = require('yelp');
 
-const yelpConfig = {
-  consumerKey: config.yelpoAuthConsumerKey,
-  consumerSecret: config.yelpConsumerSecret,
+var yelp = new Yelp({
+  consumer_key: config.yelpoAuthConsumerKey,
+  consumer_secret: config.yelpConsumerSecret,
   token: config.yelpoAuthToken,
-  tokenSecret: config.yelpTokenSecret
-};
+  token_secret: config.yelpTokenSecret,
+});
 
 const foursquareConfig = {
   clientID: config.fsClientId,
